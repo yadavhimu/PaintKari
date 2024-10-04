@@ -1,0 +1,36 @@
+import React from "react";
+
+const About_Us = () => {
+  return (
+    <div>
+      <div>
+        <h1 className="text-4xl text-center mt-10">About Us</h1>
+      </div>
+      <div className="mt-20 flex flex-col sm:flex-row"> 
+        <div className=" w-full items-cente">
+          <img className=" rounded-lg w-[500px] " src="./images/asset 1.jpeg" alt="Saree Image" />
+        </div>
+        <div className="w-full "> 
+          <p className="text-xl mt-10">
+            Established in 2023 in the heart of Uttar Pradesh, India, Paintkari
+            is a celebration of Indian artistry and craftsmanship. Our passion
+            lies in transforming everyday essentials into extraordinary pieces
+            through the magic of handpainting.
+          </p>
+          <p className="text-xl mt-10">
+            We believe that fashion is a form of self-expression, and our
+            handpainted sarees, jute bags, t-shirts, shoes, and kidswear are
+            designed to empower individuals to showcase their unique style. Each
+            product is a labor of love, created by skilled artisans who infuse
+            their creativity into every stroke.
+          </p>
+          <div className="text-center sm:text-left">
+          <button className="rounded-full mt-20 bg-yellow-600 w-28 h-10">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About_Us;
