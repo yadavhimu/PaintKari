@@ -19,9 +19,17 @@ const Footer = () => {
           <p className="text-xl font-medium mb-5">Explore</p>
           <ul className="flex flex-col gap-1 text-gray-600">
             <li>Home</li>
-            <li>About us</li>
-            <li>Delivery</li>
-            <li>Privacy policy</li>
+            <li>About </li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div>
+          <p className="text-xl font-medium mb-5">Our Product</p>
+          <ul className="flex flex-col gap-1 text-gray-600">
+            <li>Saree</li>
+            <li>T-Shirt</li>
+            <li>Shoes</li>
+            <li>Jute Bag</li>
           </ul>
         </div>
         <div>

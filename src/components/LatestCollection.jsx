@@ -1,34 +1,29 @@
-import React,{useContext, useEffect, useState} from 'react'
-import { ShopContext } from '../context/ShopContext'
-import Title from './Title';
-import ProductItem from './ProductItem';
-
+import React from 'react'
 
 const LatestCollection = () => {
-
-    const { products } = useContext(ShopContext);
-    const [latestProducts,setLatestProducts]= useState([]);
-
-    useEffect(()=>{
-        setLatestProducts(products.slice(0,5));
-    }, [])
-    
   return (
-    <div className='my-10'>
-        <div className='text-center py-8 text-3xl'>
-            <Title text1={'LATEST'} text2={'COLLECTIONS'}/>
-            <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            </p>
+    <div className='w-full h-[100%]'>
+      <div className='mt-20'>
+        <p className='text-4xl text-center font-medium'>Our Products</p>
+      </div>
+      <div className='flex flex-col sm:flex-row gap-10 mt-20'>
+        <div className='sm:w-[25%]'>
+            <img className='rounded-lg' src="./images/asset 4.webp" alt="" />
+            <p className='text-2xl  bg-yellow-100 w-1/2 flex justify-center h-10 items-center mt-5 ml-16'>Jute Bag</p>
         </div>
-        {/* Rendering products */}
-        <div className='grid grid-cols-2  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5  gap-4 gap-y-6'>
-            {
-                latestProducts.map((item,index)=>(
-                    <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price}/>
-                ))
-            }
+        <div className='sm:w-[25%]'>
+            <img className='rounded-lg' src="./images/asset 3.webp" alt="" />
+            <p className='text-2xl  bg-yellow-100 w-1/2 flex justify-center h-10 items-center mt-5 ml-16'>Shoes</p>
         </div>
+        <div className='sm:w-[25%]'>
+            <img className='rounded-lg' src="./images/asset 5.webp" alt="" />
+            <p className='text-2xl  bg-yellow-100 w-1/2 flex justify-center h-10 items-center mt-5 ml-16'>T-Shirts</p>
+        </div>
+        <div className='sm:w-[25%]'>
+            <img className='rounded-lg' src="./images/asset 2.webp" alt="" />
+            <p className='text-2xl  bg-yellow-100 w-1/2 flex justify-center h-10 items-center mt-5 ml-16'>Saree</p>
+        </div>
+      </div>
     </div>
   )
 }
