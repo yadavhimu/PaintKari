@@ -7,7 +7,7 @@ const About_Us = () => {
         <h1 className="text-4xl text-center mt-10">About Us</h1>
       </div>
       <div className="mt-20 flex flex-col sm:flex-row">
-        <div className=" w-full items-cente">
+        <div className=" w-full items-cente hover:scale-110 transition ease-in-out">
           <img
             className=" rounded-lg w-[550px] "
             src="./images/asset 1.jpeg"

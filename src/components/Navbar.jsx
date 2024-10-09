@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
 import { Link, NavLink } from "react-router-dom";
+import { MdAddCall } from "react-icons/md";
+import { MdAccessTime } from "react-icons/md";
+
 
 const Navbar = () => {
 
        const [visible,setVisible] = useState(false);
 
   return (
+    <div>
+      <div className=" flex text-6g  bg-orange-100 p-3 items-center">
+        <p className="mr-2 text-orange-700 "><MdAccessTime /></p>
+        <p>Opening Hours:Sunday-Friday, 10:00am-06:00pm</p>
+        <p className="ml-5 text-orange-700"><MdAddCall /></p>
+        <p className="ml-2">+91-6393418797</p>
+      </div>
     <div className="flex items-center justify-between py-5 font-medium">
       <Link to="/"> <img src={assets.logo} className="w-24 " alt="logo"/></Link>
       {/* <link to='/' <img src={assets.logo} className='w-36' alt=""/> </Link> */}
@@ -53,7 +63,7 @@ const Navbar = () => {
         <img onClick={()=>setVisible(true)}src={assets.menu_icon} className="w-5 cursor-pointer sm:hidden" alt=""/>
       </div>
       {/* side bar menu for small screens */}
-      <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'}`}>
+      <div className={`absolute top-0 right-0 bottom-0 z-50 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'}`}>
         <div className="flex flex-col text-gray-600">
             <div onClick={()=>setVisible(false)} className="flex items-center gap-4 p-3 cursor-pointer">
                 <img className="h-4 rotate-180" src={assets.dropdown_icon} alt=""/>
@@ -65,6 +75,7 @@ const Navbar = () => {
             <NavLink onClick={()=>setVisible(false)} className='py-2 pl-6 border' to='/contact'>CONTACT</NavLink>
         </div>
       </div>
+    </div>
     </div>
   );
 };
