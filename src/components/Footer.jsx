@@ -2,6 +2,7 @@ import React from "react";
 import { assets } from "../assets/assets";
 import { Link } from "react-router-dom";
 
+
 const Footer = () => {
   return (
     <div>
@@ -36,7 +37,7 @@ const Footer = () => {
         <div>
           <p className="text-xl font-medium mb-5">Get in Touch</p>
           <ul className="flex flex-col gap-1 text-gray-600">
-            <li className="text-xl font-medium text-black">Phone :</li>
+            <li className="text-xl font-medium text-black"> Phone :</li>
             <li className="text-lg">+91-6393418797</li>
             <li  className="text-xl font-medium text-black">Email :</li>
             <li className="text-lg">kaushalsuperna@gmail.com.com</li>
