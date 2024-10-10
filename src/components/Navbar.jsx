@@ -3,6 +3,9 @@ import { assets } from "../assets/assets";
 import { Link, NavLink } from "react-router-dom";
 import { MdAddCall } from "react-icons/md";
 import { MdAccessTime } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -11,11 +14,22 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className=" flex text-6g  bg-orange-100 p-3 items-center">
+      <div className=" flex justify-between text-6g  bg-orange-100 p-3 items-center">
+        <div className="flex items-center">
         <p className="mr-2 text-orange-700 "><MdAccessTime /></p>
         <p>Opening Hours:Sunday-Friday, 10:00am-06:00pm</p>
+        </div>
+        <div className="flex items-center">
         <p className="ml-5 text-orange-700"><MdAddCall /></p>
         <p className="ml-2">+91-6393418797</p>
+        </div>
+        <div className="flex gap-3">
+        <Link to="https://api.whatsapp.com/send?phone=916393418797" target="_new"><FaWhatsapp /> </Link>
+        <FaInstagram />
+        <FaFacebook />
+        </div>
+        
+        
       </div>
     <div className="flex items-center justify-between py-5 font-medium">
       <Link to="/"> <img src={assets.logo} className="w-24 " alt="logo"/></Link>
