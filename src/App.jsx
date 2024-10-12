@@ -12,6 +12,7 @@ import PlaceOrder from './pages/PlaceOrder'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import CanvasPainting from './pages/CanvasPainting'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/login' element={<Login/>} />
         <Route path='/orders' element={<Orders/>} />
         <Route path='/placeOrder' element={<PlaceOrder/>} />
+        <Route path='/canvaspainting' element={<CanvasPainting/>} />
       </Routes>
       <Footer/>
     </div>
