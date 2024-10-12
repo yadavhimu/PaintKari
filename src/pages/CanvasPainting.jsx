@@ -1,9 +1,10 @@
 import React from 'react'
+import Paintings from '../components/Paintings'
 
 const CanvasPainting = () => {
   return (
     <div>
-      page se hu
+      <Paintings/>
     </div>
   )
 }
