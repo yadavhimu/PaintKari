@@ -4,7 +4,7 @@ const Paintings = () => {
   return (
     <div className='  '>
         <h1 className='text-5xl flex justify-center mt-10 font-semibold'>Canvas Painting</h1>
-      <div className=' flex flex-col sm:grid grid-cols-[1fr_1fr_1fr_1fr_1fr] gap-4 mt-10'>
+      <div className=' flex flex-col sm:grid grid-cols-[1fr_1fr_1fr_1fr_1fr] gap-4 mt-14'>
         <img className='rounded-xl hover:scale-110 transition ease-in-out' src="./images/canva 1.jpg" alt="" />
         <img className='w-full h-[100%] rounded-xl hover:scale-110 transition ease-in-out' src="./images/canva 2.jpg" alt="" />
         <img className='w-full h-[100%] rounded-xl hover:scale-110 transition ease-in-out' src="./images/canva 3.jpg" alt="" />
