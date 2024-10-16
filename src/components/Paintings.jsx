@@ -11,6 +11,7 @@ const Paintings = () => {
         <img className='rounded-xl hover:scale-110 transition ease-in-out' src="./images/canva 4.jpg" alt="" />
         <img className='w-full h-[100%] rounded-xl hover:scale-110 transition ease-in-out' src="./images/canva 5.jpg" alt="" />
       </div>
+      
       <div className=' flex flex-col sm:grid grid-cols-[1fr_1fr_1fr_1fr_1fr] gap-4 mt-10'>
         <img className='w-full h-80 rounded-xl hover:scale-110 transition ease-in-out ' src="./images/canva 6.jpg" alt="" />
         <img className='w-full h-80 rounded-xl hover:scale-110 transition ease-in-out ' src="./images/canva 7.jpg" alt="" />
